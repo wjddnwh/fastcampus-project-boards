@@ -1,3 +1,9 @@
+-- 테스트 계정
+-- TODO: 테스트용이지만 비밀번호가 누출된 데이터 세팅, 계산하는 것이 좋을 지 고민해 보자.
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
+('uno', 'asdf1234', 'Uno', 'uno@mail.com', 'I am Uno', now(), 'uno', now(), 'uno')
+;
+
 # -- 123 게시글
 # insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('Duis consequat dui nec nisi volutpat eleifend.', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 'Turquoise', 'Jordanna', 'Sibbie', '2022-05-31 08:44:41', '2021-12-21 12:45:20');
 # insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('In hac habitasse platea dictumst.', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 'Pink', 'Goran', 'Elliot', '2021-12-04 11:34:00', '2022-01-22 20:03:52');
